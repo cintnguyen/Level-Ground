@@ -1,0 +1,277 @@
+*{
+    box-sizing:border-box;
+    font-family:"Roboto", sans-serif;
+}
+
+body{
+    margin:0;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 20px;
+    font-size:15px;
+    font-weight:400;
+}
+
+.main{
+    background-color:rgb(105,118, 136);
+}
+
+.classes ul{
+    display:flex;
+    list-style-type: none;
+}
+
+.classes a{
+    text-decoration:none;
+    padding-right:10px;
+    color:white;
+}
+
+.logo img{
+    object-fit:contain;
+    width:100%;
+    height:40px;
+}
+
+.logo{
+    padding-right:50px;
+}
+
+.donate button{
+    padding:10px;
+    color:rgb(105,118, 136);
+    border-radius:5px;
+    font-weight:600;
+}
+
+/* header end */
+
+/* one start */
+.one{
+    text-align:center;
+    color:white;
+    margin:0 170px;
+}
+
+.one h1{
+    font-size:60px;
+}
+
+.one p{
+    font-size:25px;
+    font-weight:300;
+}
+
+.one a{
+    text-decoration:none;
+    color:white;
+    font-weight:100;
+}
+
+.one h3{
+    font-size:25px;
+    margin-bottom:50px;
+}
+
+.one h5{
+    color:black;
+    font-style: italic;
+    padding:20px;
+    font-weight:200;
+}
+
+/* one end */
+
+/* two start */
+
+.two{
+    text-align:center;
+    padding:80px 400px; 
+}
+.two h2{
+    font-size:40px;
+    margin:0;
+}
+.two p{
+    line-height:1.5rem;
+}
+
+/* two end */
+
+/* three start */
+
+.three{
+    background-color:rgb(220,223,226);
+    padding:100px;
+    display:flex;
+    justify-content:space-between;
+    text-align:center;
+}
+.threeleft, .threeright{
+    width:50%;
+    margin:30px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.box{
+    border:1px solid black;
+    height:220px;
+    width:70%;
+    background-color:rgb(106,118,136);
+}
+
+.three p{
+    line-height:1.5rem;
+}
+
+.three button{
+    padding:20px 60px;
+    font-weight:600;
+    background-color:rgb(220,223,226);
+    border:.5px solid gray;
+}
+
+.three a{
+    text-decoration:none;
+    color:black;
+
+}
+
+
+/* three end */
+
+/* four start */
+
+
+.four{
+    text-align:center;
+    padding:80px 400px; 
+}
+.four h2{
+    font-size:35px;
+    margin-bottom:0;
+}
+
+.four p{
+    line-height:1.5rem;
+    margin-bottom:40px;
+}
+
+.four button{
+    padding:20px 60px;
+    font-weight:600;
+    background-color:white;
+    border:.5px solid gray;
+}
+.four a{
+    text-decoration:none;
+    color:black;
+
+}
+/* four end */
+
+footer{
+    background-color:rgb(24,31,41);
+    color:white;
+    padding:40px 60px;
+}
+
+footer a{
+    text-decoration:none;
+    color:white;
+}
+
+.icons{
+    display:flex;
+    justify-content:space-between;
+}
+
+.footertop{
+    display:flex;
+    justify-content:space-between;
+    border-bottom:.5px solid white;
+}
+
+.footertop h4{
+    color:rgb(101,114,131);
+    margin-bottom:0 0 10px 0;
+}
+
+footer li{
+    list-style-type: none;
+    padding-right:20px;
+}
+
+.site ul{
+    display:flex;
+
+    padding-left:0;
+}
+
+.address h4{
+    margin:0;
+}
+
+.level{
+    padding-bottom:20px;
+}
+
+.level h4{
+    color:white;
+}
+.light{
+    font-weight:100;
+}
+
+.footerbottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.footerbottom img{
+    height:50px;
+    object-fit:contain;
+}
+
+/* footer end */
+
+@media (max-width:1200px){
+    .two, .four {
+        padding: 80px 200px;
+    }
+    .footerbottom{
+        display:none;
+    }
+}
+
+@media (max-width:950px){
+    .one{
+        margin:0;
+    }
+    .one h1{
+        font-size:40px;
+    }
+    .two, .four{
+        padding:40px 0;
+    }
+}
+
+@media(max-width:760px){
+    .two{
+        display:none;
+    }
+    .three{
+        flex-wrap:wrap;
+        display:block;
+    }
+    .threeleft, .threeright{
+        width:100%;
+    }
+
+}
